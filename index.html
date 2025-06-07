@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('https://i.pinimg.com/originals/a3/50/87/a3508797091683ab55e1d0534c6ba97a.gif') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      width: 90%;
+      max-width: 500px;
+      padding: 20px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin: 0 auto;
+      margin-top: 100px;
+      display: block;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .name {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .tagline {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+    .section {
+      margin-top: 20px;
+    }
+    .section h3 {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    .roles span {
+      display: inline-block;
+      background: #eee;
+      color: #333;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 12px;
+      margin: 2px;
+    }
+    .about {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .connection-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .connection-item {
+      background: #f2f2f2;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #000;
+    }
+    .connection-item:hover {
+      transform: scale(1.05);
+      background: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/b7/e5/38/b7e538745f6543a823c07ffda917ff63.jpg" class="avatar" alt="avatar">
+
+    <div class="name">! Alena</div>
+    <div class="tagline">
+      <span style="background:#000000;color:#fff;padding:2px 6px;border-radius:4px;">Alena.</span>
+      <span style="background:#0e36e6;color:#fff;padding:2px 6px;border-radius:4px;">ZPS</span><br/>
+      ZPS Never Die<br/>
+      <a href="#" style="color:blue;text-decoration:underline;">.gg/zps</a>
+    </div>
+
+    <div class="section">
+      <h3>ABOUT ME</h3>
+      <p class="about">
+        a 16-year-old freelance developer(fake) 👨‍💻 from Vietnam 🇻🇳, passionate about crafting creative solutions through code ⚡, a dedicated gamer 🎮 who loves the thrill of every match, and an anime enthusiast 🗨️ who finds inspiration and emotion ❤️ in every story.
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>ROLES</h3>
+      <div class="roles">
+        <span>User</span>
+        <span>Developer</span>
+        <span>Gamer</span>
+        <span>Student</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>CONNECTIONS</h3>
+      <div class="connection-grid">
+        <a href="https://store.steampowered.com/" target="_blank" class="connection-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" alt="Steam" style="width:32px;height:32px;"><br><small>Steam</small>
+        </a>
+        <a href="https://github.com/" target="_blank" class="connection-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" style="width:32px;height:32px;"><br><small>GitHub</small>
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank" class="connection-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" style="width:32px;height:32px;"><br><small>TikTok</small>
+        </a>
+        <a href="https://discord.com/" target="_blank" class="connection-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" style="width:32px;height:32px;"><br><small>Discord</small>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
